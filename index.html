@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>My Blog</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header>
+        <nav>
+            <div class="logo">My Spy Blog</div>
+            <div class=".nav-menu" id="nav-menu" tabindex="-1">
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>    
+            <ul class="navbar">
+                <li class="nav__item"><a href="index.html">Home</a></li>
+                <li class="nav__item"><a href="create.html">Create Blog</a></li>
+                <li class="nav__item"><a href="profile.html">Profile</a></li>
+                <button class="cute-button">Log In</button>
+                <button class="cute-button">Sign Up</button>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-button">Search</button>
+                </div>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+        <h1>Manga by KATE</h1>
+        
+        <!-- Horizontal Line -->
+        <hr size="2" color="gray" width="100%">
+        
+        <section class="blog-main">
+            <img src="assets/img/spy-x-family-anime_6203092.jpg" alt="spy-family-main-photo">
+        </section>
+
+        <label class="filter" for="category-select">Choose a category:</label>
+        <select id="category-select">
+            <option value="all">All Categories</option>
+            <option value="SpyXFamily">SpyXFamily</option>
+            <option value="Naruto">Naruto</option>
+            <option value="One-Piece">One Piece</option>
+        </select>
+
+        <section class="popular-post">
+        <h1>10 Most Popular Posts</h1>
+  
+            <!-- List of popular posts -->
+            <ul>
+                <li>
+                    <h2>Post Title 1</h2>
+                    <img class="pop-img" src="assets/img/blog-4.jpg" alt="Blog Post 4">
+                    <p class ="text">Summary of Post 1...</p>
+                    <p class ="dots" id="dots1">Full content of Post 1 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots1', 'button1')">Show More</button>
+                </li>
+
+                <li>
+                    <h2>Post Title 2</h2>
+                    <img class="pop-img" src="assets/img/blog-5.jpg" alt="Blog Post 5">
+                    <p class ="text">Summary of Post 2...</p>
+                    <p class= "dots" id="dots2">Full content of Post 2 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots2', 'button2')">Show More</button>
+                </li>
+
+                <li>
+                    <h2>Post Title 3</h2>
+                    <img class="pop-img" src="assets/img/blog-6.png" alt="Blog Post 5">
+                    <p class ="text">Summary of Post 3...</p>
+                    <p class= "dots" id="dots3">Full content of Post 2 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots3', 'button3')">Show More</button>
+                </li>
+
+                <li>
+                    <h2>Post Title 4</h2>
+                    <img class="pop-img" src="assets/img/blog-1.jpg" alt="Blog Post 5">
+                    <p class ="text">Summary of Post 4...</p>
+                    <p class= "dots" id="dots4">Full content of Post 2 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots4', 'button4')">Show More</button>
+                </li>
+
+                <li>
+                    <h2>Post Title 5</h2>
+                    <img class="pop-img" src="assets/img/blog-2.jpg" alt="Blog Post 5">
+                    <p class ="text">Summary of Post 5...</p>
+                    <p class= "dots" id="dots5">Full content of Post 2 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots5', 'button5')">Show More</button>
+                </li>
+
+                <li>
+                    <h2>Post Title 6</h2>
+                    <img class="pop-img" src="assets/img/blog-3.jpg" alt="Blog Post 5">
+                    <p class ="text">Summary of Post 6...</p>
+                    <p class= "dots" id="dots6">Full content of Post 2 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots6', 'button6')">Show More</button>
+                </li>
+
+                <li>
+                    <h2>Post Title 7</h2>
+                    <img class="pop-img" src="assets/img/blog-2.jpg" alt="Blog Post 5">
+                    <p class ="text">Summary of Post 7...</p>
+                    <p class= "dots" id="dots7">Full content of Post 2 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots7', 'button7')">Show More</button>
+                </li>
+
+                <li>
+                    <h2>Post Title 8</h2>
+                    <img class="pop-img" src="assets/img/blog-5.jpg" alt="Blog Post 5">
+                    <p class ="text">Summary of Post 8...</p>
+                    <p class= "dots" id="dots8">Full content of Post 2 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots8', 'button8')">Show More</button>
+                </li>
+
+                <li>
+                    <h2>Post Title 9</h2>
+                    <img class="pop-img" src="assets/img/blog-5.jpg" alt="Blog Post 5">
+                    <p class ="text">Summary of Post 9...</p>
+                    <p class= "dots" id="dots9">Full content of Post 2 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots9', 'button9')">Show More</button>
+                </li>
+
+                <li>
+                    <h2>Post Title 10</h2>
+                    <img class="pop-img" src="assets/img/blog-5.jpg" alt="Blog Post 5">
+                    <p class ="text">Summary of Post 10...</p>
+                    <p class= "dots" id="dots10">Full content of Post 2 Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                        human is washing you why halp oh the horror flee scratch hiss bite. 
+                        Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                        i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+                        <button onclick="toggleText('dots10', 'button10')">Show More</button>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="blog-post" data-category="SpyXFamily">
+            <img src="assets/img/blog-1.jpg" alt="Blog Post 1">
+            <h2>How do you plan to balance work and our relationship?</h2>
+            <h4>Author name</h4>
+            <p>Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                human is washing you why halp oh the horror flee scratch hiss bite. 
+                Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+            <div class="topic">Comment</div>
+        </section>
+
+        <section class="blog-post" data-category="SpyXFamily">
+            <img src="assets/img/blog-2.jpg" alt="Blog Post 2">
+            <h2>What did you aspire to become when you were a child?</h2>
+            <h4>Author name</h4>
+            <p>Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                human is washing you why halp oh the horror flee scratch hiss bite. 
+                Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+            <div class="topic">Comment</div>
+        </section>
+
+        <section class="blog-post" data-category="SpyXFamily">
+            <img src="assets/img/blog-3.jpg" alt="Blog Post 3">
+            <h2>Will you compel me to do something I am not willing to do?</h2>
+            <h4>Author name</h4>
+            <p>Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                human is washing you why halp oh the horror flee scratch hiss bite. 
+                Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+            <div class="topic">Comment</div>
+        </section>
+
+        <section class="blog-post" data-category="SpyXFamily">
+            <img src="assets/img/blog-4.jpg" alt="Blog Post 1">
+            <h2>What is your deal breaker in a relationship?</h2>
+            <h4>Author name</h4>
+            <p>Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                human is washing you why halp oh the horror flee scratch hiss bite. 
+                Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+            <div class="topic">Comment</div>
+        </section>
+
+        <section class="blog-post" data-category="Naruto">
+            <img src="assets/img/naruto-1.png" alt="Blog Post 2">
+            <h2>What is your definition of an ideal date night?</h2>
+            <h4>Author name</h4>
+            <p>Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                human is washing you why halp oh the horror flee scratch hiss bite. 
+                Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+            <div class="topic">Comment</div>
+        </section>
+
+        <section class="blog-post" data-category="Naruto">
+            <img src="assets/img/naruto-2.jpg" alt="Blog Post 3">
+            <h2>What is the best advice you have received to date?</h2>
+            <h4>Author name</h4>
+            <p>Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                human is washing you why halp oh the horror flee scratch hiss bite. 
+                Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+            <div class="topic">Comment</div>
+        </section>
+
+        <section class="blog-post" data-category="Naruto">
+            <img src="assets/img/naruto-3.jpg" alt="Blog Post 1">
+            <h2>What is your favorite honeymoon destination?</h2>
+            <h4>Author name</h4>
+            <p>Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                human is washing you why halp oh the horror flee scratch hiss bite. 
+                Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+            <div class="topic">Comment</div>
+        </section>
+
+        <section class="blog-post" data-category="Naruto">
+            <img src="assets/img/naruto-4.jpg" alt="Blog Post 2">
+            <h2>How do you think we can keep each other happy for the rest of our lives?</h2>
+            <h4>Author name</h4>
+            <p>Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                human is washing you why halp oh the horror flee scratch hiss bite. 
+                Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+            <div class="topic">Comment</div>
+        </section>
+
+        <section class="blog-post" data-category="One-Piece">
+            <img src="assets/img/one-piece-1.jpg" alt="Blog Post 3">
+            <h2>What is the most significant lesson life has taught you?</h2>
+            <h4>Author name</h4>
+            <p>Sun bathe skid on floor, crash into wall , or sit by the fire swat at dog 
+                human is washing you why halp oh the horror flee scratch hiss bite. 
+                Eats owners hair then claws head purrrrrr catching very fast laser pointer yet 
+                i show my fluffy belly but it's a trap! if you pet it i will tear up your hand meow loudly just to annoy owners.</p>
+            <div class="topic">Comment</div>
+        </section>
+
+        <div class="blogs">
+            <h1>Books</h1>
+            <div id="blog-list">
+              <!-- Blog data will be displayed here -->
+            </div>
+        </div>
+
+        <footer>
+            <div class="statistics">
+                <h2>Statistics</h2>
+                <div id="data-container">
+                  <!-- JSON data will be displayed here -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

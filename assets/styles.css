@@ -1,0 +1,468 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+
+/*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Roboto', sans-serif;
+  --title-font: 'Lora', serif;
+  --biggest-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --tiny-font-size: .625rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+/* Reset some default styles */
+body, ul {
+font: var(--body-font);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: var(--font-medium);
+}
+
+p {
+    font-family: var(--body-font);
+}
+/* Header Styles */
+header {
+    font: var(--title-font);
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0;
+}
+
+.nav {
+    height: calc(var(--header-height) + .5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+    padding-inline: 1.5rem;
+    border-radius: 3rem;
+    transition: background .4s; /* for dark mode animation */
+  }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: var(--biggest-font-size);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    font: var(--body-font);
+    margin-right: 20px;
+}
+
+.navbar a {
+    font-family: var(--body-font);
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: none; /* Hide the hamburger icon */
+  }
+
+
+/* Base Button Styles */
+.cute-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 5px;
+    background: linear-gradient(to bottom, #ff6b6b, #ff8e8e);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .cute-button:hover {
+    background: linear-gradient(to bottom, #ff8e8e, #ff6b6b);
+  }
+
+  /* Style the search container */
+.search-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input field */
+#search-input {
+    border: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+/* Style the search button */
+#search-button {
+    background: linear-gradient(to bottom, #ff6b6b, #ff8e8e);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+#search-button:hover {
+    background: linear-gradient(to bottom, #ff8e8e, #ff6b6b);
+}
+
+/* Initially, hide the additional text */
+.additional-text {
+  display: none;
+}
+
+/* Style for the "See More" links */
+.see-more {
+  color: blue;
+  cursor: pointer;
+}
+
+.filter {
+  position: fixed;
+  top: 130px;
+  left: 5px;
+}
+
+#category-select {
+  position: fixed;
+  top: 130px;
+  left: 150px;
+}
+
+.popular-post {
+  width: 17%; /* Adjust the width as needed */
+  height: 100vh; /* 100% of viewport height */
+  background-color: #fff; /* Background color for the left section */
+  overflow-y: auto; /* Enable vertical scrolling for the left section */
+  position: fixed; /* Fixed positioning to the left */
+  top: 160px; /* Position at the top of the viewport */
+  left: 5px;
+  bottom: 50px;
+}
+
+.popular-post li {
+  width: 95%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.pop-img {
+  width: 250px;
+}
+
+/* Blog Post Styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-main img{
+    width: 1200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    font-family: var(--body-font);
+    width: calc(33.33% - 20px); /* 33.33% for three columns, minus margin */
+    margin-right: 20px; /* Space between columns */
+    margin-bottom: 20px;
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+/* Clear the margin for the last column in each row */
+.blog-post:nth-child(4n),
+.blog-post:nth-child(7n) {
+    margin-right: 0;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: 200px;
+}
+
+.blog-post h2 {
+    font: var(--font-semi-bold);
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.blog-post p {
+    font: var(--small-font-size);
+    font-size: 14px;
+}
+
+.topic {
+    font: var(--body-font);
+    background: linear-gradient(to bottom, #ff6b6b, #ff8e8e);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.topic:hover{
+    background: linear-gradient(to bottom, #ff8e8e, #ff6b6b);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#new-blog {
+    width: 0 auto;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+
+  /* Tablet breakpoint */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+      font-size: 16px; /* Increase font size for tablets */
+    }
+    .navbar {
+        display: none; /* Hide the menu items on small screens */
+      }
+
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+      }
+
+      .nav-menu {
+        display: block; /* Show the hamburger icon */
+      }
+
+      .navbar.active {
+        display: block;
+        text-align: end;
+        background-color: #fff;
+        position: absolute;
+        top: 60px; /* Adjust as needed based on your design */
+        right: 10px;
+        left: 0;
+      }
+      
+      .navbar.active li,
+      .navbar.active button,
+      .navbar.active div {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      
+      .navbar.active a {
+        color: #333;
+        text-decoration: none;
+      }
+
+
+      img {
+        /* Adjust image styles for smartphones, e.g., reduce width, add margins, etc. */
+        max-width: 90%;
+        margin: 0 auto; /* Center images on smaller screens */
+      }
+      .blog-post {
+        font-family: var(--body-font);
+        width: calc(100% - 20px); /* 33.33% for three columns, minus margin */
+        margin-right: 20px; /* Space between columns */
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+  }
+  
+  /* Smartphone breakpoint */
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px; /* Decrease font size for smartphones */
+    }
+      img {
+        /* Adjust image styles for smartphones, e.g., reduce width, add margins, etc. */
+        max-width: 90%;
+        margin: 0 auto; /* Center images on smaller screens */
+      }
+      main {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+    .blog-post {
+        font-family: var(--body-font);
+        width: calc(100% - 20px); /* 33.33% for three columns, minus margin */
+        margin-right: 20px; /* Space between columns */
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      .navbar {
+        display: none; /* Hide the menu items on small screens */
+      }
+
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+      }
+
+      .nav-menu {
+        display: block; /* Show the hamburger icon */
+      }
+
+      .navbar.active {
+        display: block;
+        text-align: end;
+        background-color: #fff;
+        position: absolute;
+        top: 60px; /* Adjust as needed based on your design */
+        right: 10px;
+        left: 0;
+      }
+      
+      .navbar.active li,
+      .navbar.active button,
+      .navbar.active div {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      
+      .navbar.active a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .profile-container {
+        display: grid;
+        grid-template-columns: 100%;
+      }
+  }
+
+  /* Add your CSS styles here */
+.statistics {
+  position: fixed;
+  width: 180px;
+  right: 20px;
+  top: 130px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.statistics:hover{
+  background: linear-gradient(to bottom, #ff8e8e, #ff6b6b);
+  color: #fff;
+}
+
+#data-container {
+  margin-top: 10px;
+}
+
+/* Add your CSS styles here */
+.blogs {
+  position: fixed;
+  top: 350px;
+  right: 5px;
+  height: 100vh; /* 100% of viewport height */
+  background-color: #fff; /* Background color for the left section */
+  overflow-y: auto; /* Enable vertical scrolling for the left section */
+}
+
+.blog-list {
+  font-family: var(--body-font);
+  width: calc(33.33% - 20px); /* 33.33% for three columns, minus margin */
+  margin-right: 20px; /* Space between columns */
+  margin-bottom: 20px;
+  padding: 20px;
+  /* border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+  box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blog-category {
+  color: #666;
+}
+
+.blog-content {
+  margin-top: 10px;
+}

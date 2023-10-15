@@ -1,0 +1,85 @@
+{
+    "blogs": [
+      {
+        "id": 1,
+        "title": "How to Learn JavaScript",
+        "category": "Programming",
+        "content": "Lorem ipsum...",
+        "author": "John Doe",
+        "views": 1200
+      },
+      {
+        "id": 2,
+        "title": "Tips for Healthy Living",
+        "category": "Health",
+        "content": "Lorem ipsum...",
+        "author": "Jane Doe",
+        "views": 800
+      },
+      {
+        "id": 3,
+        "title": "The Art of Cooking",
+        "category": "Food",
+        "content": "Lorem ipsum...",
+        "author": "Chef James",
+        "views": 1500
+      },
+      {
+        "id": 4,
+        "title": "Exploring Nature's Wonders",
+        "category": "Travel",
+        "content": "Lorem ipsum...",
+        "author": "Nature Enthusiast",
+        "views": 2200
+      },
+      {
+        "id": 5,
+        "title": "Mastering Mobile App Development",
+        "category": "Technology",
+        "content": "Lorem ipsum...",
+        "author": "Tech Guru",
+        "views": 1800
+      },
+      {
+        "id": 6,
+        "title": "Fitness for Beginners",
+        "category": "Health",
+        "content": "Lorem ipsum...",
+        "author": "Fitness Pro",
+        "views": 900
+      },
+      {
+        "id": 7,
+        "title": "Traveling on a Budget",
+        "category": "Travel",
+        "content": "Lorem ipsum...",
+        "author": "Budget Traveler",
+        "views": 1600
+      },
+      {
+        "id": 8,
+        "title": "Web Development Best Practices",
+        "category": "Technology",
+        "content": "Lorem ipsum...",
+        "author": "Web Developer",
+        "views": 2400
+      },
+      {
+        "id": 9,
+        "title": "The World of Science Fiction",
+        "category": "Books",
+        "content": "Lorem ipsum...",
+        "author": "Sci-Fi Fanatic",
+        "views": 1300
+      },
+      {
+        "id": 10,
+        "title": "Cooking Adventures Around the World",
+        "category": "Food",
+        "content": "Lorem ipsum...",
+        "author": "Global Chef",
+        "views": 1900
+      }
+    ]
+  }
+  
